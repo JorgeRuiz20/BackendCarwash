@@ -33,7 +33,7 @@ public class SecurityConfig {
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
     private final JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
 
-    @Value("${cors.allowed.origins:https://frontendcarwash.onrender.com,http://localhost:5173,http://localhost:3000}")
+    @Value("${cors.allowed.origins:https://frontendcarwash-3w1f.onrender.com,http://localhost:5173,http://localhost:3000}")
     private String[] allowedOrigins;
 
     @Bean

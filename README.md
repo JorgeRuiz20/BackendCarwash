@@ -96,7 +96,7 @@ El backend implementa una arquitectura en capas desacoplada (**N-Tier Layered Ar
   - `ADMINISTRADOR`: Control total sobre usuarios, tarifas de servicios, bahías, cupones promocionales y auditorías.
   - `OPERADOR`: Operaciones diarias, supervisión del dashboard, inicio/finalización de lavados y resolución de alertas de telemetría.
   - `CLIENTE`: Consulta pública de catálogo, creación de reservas propias, realización de pagos y acceso al programa de fidelización.
-- **CORS Configurado:** Permite orígenes específicos en desarrollo (`localhost:5173`, `localhost:3000`) y en producción (`https://frontendcarwash.onrender.com`), asegurando envío de credenciales (`allowCredentials=true`).
+- **CORS Configurado:** Permite orígenes específicos en desarrollo (`localhost:5173`, `localhost:3000`) y en producción (`https://frontendcarwash-3w1f.onrender.com`), asegurando envío de credenciales (`allowCredentials=true`).
 
 ---
 
@@ -395,7 +395,7 @@ El proyecto se configura mediante propiedades de Spring en `application.properti
 | `SPRING_DATASOURCE_PASSWORD` | *(secreto)* | Contraseña de la base de datos |
 | `JWT_SECRET` | *(clave de 256 bits predeterminada)* | Llave secreta para la firma y verificación de tokens JWT |
 | `JWT_EXPIRATION` | `86400000` *(24 horas en ms)* | Tiempo de expiración de los tokens de sesión |
-| `CORS_ORIGINS` | `https://frontendcarwash.onrender.com,http://localhost:5173,http://localhost:3000` | Orígenes web autorizados para interactuar con la API |
+| `CORS_ORIGINS` | `https://frontendcarwash-3w1f.onrender.com,http://localhost:5173,http://localhost:3000` | Orígenes web autorizados para interactuar con la API |
 
 ---
 
@@ -478,3 +478,4 @@ docker run -d -p 8080:8080 \
 - **Proyecto:** Carwash Solutions Backend
 - **Autor / Repositorio:** [JorgeRuiz20/BackendCarwash](https://github.com/JorgeRuiz20/BackendCarwash)
 - **Estado:** Producción / Despliegue Activo en Render
+
